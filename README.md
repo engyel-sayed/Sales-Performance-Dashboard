@@ -10,14 +10,14 @@ The underlying data was sourced from **Excel Datasets**, transformed, and struct
 ## 🏗️ Data Architecture & Modeling
 - **Data Source:** Raw sales data exported from Excel sheets.
 - **Data Warehouse Model:** **Star Schema Design**
-  - **Fact Table:** Orders Fact table containing numerical measures (Order Quantities, Sub-Total, Tax, Freight, Total Due).
+  - **Fact Table:** Orders Fact table
   - **Dimension Tables:** Standardized lookup tables for Date, Product/Category, Order Status, and Territory.
 
 ---
 
 ## 📈 Executive Summary (Key KPIs)
-- **Total Orders (#order):** 1K+
-- **Order Line Items (#OrderDetail):** 24K+
+- **Total Orders:** 1K+
+- **Order Line Items:** 24K+
 - **Sub-Total Revenue:** $30M
 - **Total Tax:** $3M
 - **Total Freight Cost:** $916K
@@ -27,17 +27,13 @@ The underlying data was sourced from **Excel Datasets**, transformed, and struct
 
 ## 🔍 Key Dashboard Insights & Visuals
 
-1. **Order Trends Over Time (`order by Date`):**
-   - Historical tracking of order volumes from **2012 to 2014**, identifying seasonal peaks and trend fluctuations.
+1. **Order Trends Over Time:**
+  
+2. **Category Volume Breakdown**
 
-2. **Category Volume Breakdown (`OrderQty by Category`):**
-   - Tree-map visual representing product demand across key retail categories: **Bikes**, **Components**, **Clothing**, and **Accessories**.
+3. **Order Status Tracking**
 
-3. **Order Status Tracking (`order by Status`):**
-   - Operational breakdown tracking fulfillment flow across **Approved**, **In Process**, **Shipped**, **Cancelled**, **Rejected**, and **Backordered** orders.
-
-4. **Regional Sales Analysis (`order and Total_Due by Territory`):**
-   - Dual-axis visual comparing order counts and total revenue across international sales territories, highlighting top markets like **Canada**, **Northwest**, and **France**.
+4. **Regional Sales Analysis**
 
 ---
 
